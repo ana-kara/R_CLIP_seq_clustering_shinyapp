@@ -64,18 +64,6 @@ ui <- fluidPage(
          
          
          
-         #cat_list <- list.load("chr_start_end.rds")
-         
-         #bb <- read.delim("all_sorted_merged_peaks", header = F)
-         #bb$V1 <- unfactor(bb$V1)
-         #colnames(bb) <- c("chrom", "start", "end","strand")
-         
-         
-         
-         
-         #gr1 <-   as.data.frame(bb) %>% 
-             #select(chrom, start, end, strand) 
-         #rm(bb)
          
          temp_files <- list()
          for(x in 1:length(input$bed_file[,"datapath"])){
